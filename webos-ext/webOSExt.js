@@ -36,6 +36,14 @@ enyo.requiresWindow(function() {
 			},
 			setWindowOrientation: function(inOrientation) {
 				//inOrientation is one of 'up', 'down', 'left', 'right', or 'free'
+				//When inOrientation is 'landscape' or 'portret' set the orientation correctly and detect rotation o the device to addjust the orientation.
+				//Remember that the touchpad has some strange behavour in the orientation.
+				if( inOrientation =="landscape") {
+					
+				}
+				if( inOrientation =="portret"){
+					
+				}
 				PalmSystem.setWindowOrientation(inOrientation);
 			},
 			setFullScreen: function(inMode) {
